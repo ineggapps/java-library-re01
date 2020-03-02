@@ -5,6 +5,15 @@ public class UserDAO {
 	private String id;
 	private String pw;
 	private String name;
+	
+	public UserDAO() {
+	}
+
+	public UserDAO(String id, String pw, String name) {
+		this.id = id;
+		this.pw = pw;
+		this.name = name;
+	}
 	public String getId() {
 		return id;
 	}

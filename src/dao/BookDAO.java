@@ -2,7 +2,7 @@ package dao;
 
 public class BookDAO {
 	private String title;
-	private String publisher;
+	private String writer;
 
 	public String getTitle() {
 		return title;
@@ -12,12 +12,27 @@ public class BookDAO {
 		this.title = title;
 	}
 
-	public String getPublisher() {
-		return publisher;
+	public String getWriter() {
+		return writer;
 	}
 
-	public void setPublisher(String publisher) {
-		this.publisher = publisher;
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
+
+	@Override
+	public String toString() {
+		return "[" + title + ", " + writer + "]";
+	}
+
+	public BookDAO() {
+		super();
+	}
+
+	public BookDAO(String title, String writer) {
+		super();
+		this.title = title;
+		this.writer = writer;
 	}
 
 }
